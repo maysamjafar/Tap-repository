@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap coding assignment</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="tap.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li class="homelink"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="#"><i class="fas fa-phone"></i> Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content-container">
+  <div class="text-content">
+    <section class="welcome-section">
+      <h1 class="welcome">Welcome to my site</h1>
+      <h2 class="hi">Hi, I'm Maysam, a software <b class="developer">developer</b></h2>
+      <p class="p1">I'm a focused computer engineering student, I'm currently pursuing my bachelor degree at Al-Najah National University.<a class="seemore" href="#" id="see-more" data-target="hidden-paragraph">See More<br></a></p>
+
+      <p id="hidden-paragraph" class="hidden">I am a fifth-year student, 13 academic hours away from graduating and getting my degree. I am ready to get professional training and get hired.</p>
+    </section>
+
+    <section class="action-buttons">
+      <button class="hire">Hire me !</button>
+      <button class="see">See My Project</button>
+    </section>
+  </div>
+<div class="imageshadow">
+  <div class="image-container">
+    <img src="maysam.jpg" alt="">
+  </div>
+</div>
+</div>
+
+
+<script>
+  document.getElementById('see-more').addEventListener('click', function() {
+    var hiddenParagraph = document.getElementById('hidden-paragraph');
+    hiddenParagraph.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
